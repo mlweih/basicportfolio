@@ -1,0 +1,167 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+h1, h2, h3, h5, .logo{
+  font-family: 'Holtwood One SC', serif;
+  color: #ffffff;
+}
+
+section, footer{
+  padding: 5%;
+}
+
+h1, h5{
+  text-align: center;
+}
+
+p, h4, a, label{
+  font-family: 'Poppins', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+h2{
+    margin-bottom: 3%;
+}
+
+p{
+  color: #7f8c8d;
+}
+
+nav a{
+  font-family: 'Holtwood One SC', serif;
+}
+
+/* HEADER*/
+.gifhead{
+  background-image: url("../images/hermionestir.gif");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding-top: 3%;
+}
+
+nav a:hover{
+  color: #f1c40f;
+}
+
+/* ABOUT */
+.about{
+  background-color: #3498db;
+  color: #ffffff;
+  min-height: 45vh;
+}
+
+.aboutbox{
+  background-color: #ffffff;
+  padding: 2%;
+}
+
+.aboutbox h2{
+  color: #2980b9;
+}
+
+.aboutbox p{
+  color: #3498db;
+}
+
+/* SKILLS */
+.skills{
+  background-color: #ffffff;
+}
+
+.skills i{
+  color: #c48eda;
+  font-size: 1.4rem;
+}
+
+.skills h2, h3{
+  color: #8e44ad;
+}
+
+.skills div{
+  margin-bottom: 2%;
+}
+
+.skills i:hover{
+  color: #f1c40f;
+}
+
+/* MAP */
+.map{
+  background-color: #27ae60;
+}
+
+.map iframe{
+  width: 100%;
+}
+
+/* RESUME */
+.resume{
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+.experience{
+  margin: 2% 0;
+}
+
+.bottomborder{
+  border-bottom: 1px solid #c0392b;
+}
+.resume h2{
+  color: #c0392b;
+}
+
+.resume h3, h4{
+  color: #e74c3c;
+}
+
+.experience a{
+  color: #7f8c8d;
+  text-decoration: underline;
+}
+
+.experience a:hover{
+  color: #e74c3c;
+}
+/* FOOTER */
+footer{
+  background-color: #e67e22;
+  text-align: center;
+}
+
+footer i{
+  color: #ffffff;
+}
+
+form label{
+  display: block;
+  color: #ffffff;
+}
+
+form input, form textarea{
+  width: 100%;
+}
+
+form div{
+  margin-bottom: 3%;
+}
+
+div.border{
+  border: 1px solid black;
+}
+
+/* TO DO FIX LEFT RIGHT MARGINS */
+.social i{
+  margin: 0, 3%;
+  font-size: 2rem;
+}

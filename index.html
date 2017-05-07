@@ -1,0 +1,115 @@
+---
+layout: default
+title: The Witch's Lab
+map: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14767.561937789505!2d114.15104171158282!3d22.28213796967283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040064a31dd1bd%3A0x5007a73bdeccb552!2sCentral%2C+Hong+Kong!5e0!3m2!1sen!2sid!4v1494051682429" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+skills:
+  - name: UI Design
+    description: Lorem ipsum dolor sit amet, consectetur adipiscgelir
+    icon: magic
+  - name: Strategy
+    description: Lorem ipsum dolor sit amet, consectetur adipiscgelir
+    icon: puzzle-piece
+  - name: Product Management
+    description: Lorem ipsum dolor sit amet, consectetur adipiscgelir
+    icon: bar-chart
+  - name: International Travel
+    description: Lorem ipsum dolor sit amet, consectetur adipiscgelir
+    icon: plane
+  - name: Trivia Regurgitation
+    description: Lorem ipsum dolor sit amet, consectetur adipiscgelir
+    icon: bolt
+  - name: Cat Cuddling
+    description: Lorem ipsum dolor sit amet, consectetur adipiscgelir
+    icon: paw
+experiences:
+  - name: Communications Manager
+    location: Hong Kong
+    company: Connell Brothers Co.
+    description: Head of Communications for <a href="http://www.connellbrothers.com">Connell Brothers Company</a> (CBC). Responsible for Strategic Planning, Exhibition Design, Event Planning and Branding.
+    year: 2017
+  - name: Product Manager
+    location: Vienna, Austria
+    company: bwin
+    description: Lorem ipsum dolor sit amet, consectetur adipiscgelir
+    year: 2016
+  - name: Interaction Designer
+    location: Vienna, Austria
+    company: bwin
+    description: Lorem ipsum dolor sit amet, consectetur adipiscgelir
+    year: 2015
+---
+
+<!-- My Name -->
+<div class="gifhead">
+
+  <div>
+    <h1>
+      <div>Mandy Weih</div>
+      UX Witch-in-Training
+    </h1>
+    <h5>small subtitle lorem</h5>
+  </div>
+</div>
+
+  <!-- About Me -->
+  <section class="about">
+    <div class="aboutbox">
+      <h2> About Me </h2>
+      <p>
+        Schlitz echo park exercitation kinfolk snackwave affogato, small batch synth nesciunt thundercats. Dreamcatcher in eiusmod semiotics tumblr glossier. Laborum eiusmod 8-bit, pabst wolf enim fap keffiyeh irure. Seitan actually cred helvetica, brunch cliche before they sold out. Trust fund sartorial everyday carry, commodo you probably haven't heard of them whatever try-hard retro.
+      </p>
+    </div>
+  </section>
+
+  <!-- THIS IS THE SIX-GRID SECTION -->
+  <section class="skills grid">
+    <h2 class="col-12">
+      My Special Abilities
+    </h2>
+
+    {% for skill in page.skills %}
+    <div class="col-4">
+      <i class="fa fa-{{ skill.icon }}" aria-hidden="true"></i>
+      <h3>
+        {{ skill.name }}
+      </h3>
+      <p>
+        {{ skill.description }}
+      </p>
+    </div>
+    {% endfor %}
+
+  </section>
+
+  <!-- MAP iFRAME -->
+  <section class="map">
+    <h2> My Hood </h2>
+    {{page.map}}
+  </section>
+
+  <!-- Resume -->
+  <section class="resume">
+    <h2>My Experience</h2>
+    <div class="grid experience">
+      <!-- start of an event-->
+        {% for job in page.experiences %}
+        <div class="grid col-12 bottomborder">
+        <div class="col-1">
+          <h3>{{ job.year }}</h3>
+        </div>
+        <div class="col-5">
+          <h3>{{ job.name }}</h3>
+          <h4>{{ job.company }}</h4>
+          <h4>{{ job.location }}</h4>
+        </div>
+        <div class="col-6">
+          <p>
+            {{ job.description }}
+          </p>
+        </div>
+      </div>
+        {% endfor %}
+    </div>
+  </section>
+
+</body>
